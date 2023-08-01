@@ -1,6 +1,6 @@
 # Linux-Server-Config
 
-Configure a new Linux server with essential setup instructions and scripts
+Set up your new Linux server on Debian with essential instructions and scripts.
 
 ## Install Essential Tools
 
