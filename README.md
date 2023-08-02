@@ -64,12 +64,10 @@ mkdir -p "$(batcat --config-dir)/themes" && curl -o "$(batcat --config-dir)/them
 
 ## Change Locale and Localtime
 
-> Note: Replace `zh_CN.UTF-8` with your desired locale if needed.
+> Note: Replace `zh_CN.UTF-8` with your desired locale, and replace `Asia/Shanghai` with your desired city/timezone if needed.
 
 ```bash
-sudo locale-gen zh_CN.UTF-8
-sudo update-locale LANG="zh_CN.UTF-8"
-sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+sudo locale-gen zh_CN.UTF-8 && sudo update-locale LANG="zh_CN.UTF-8" && sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## Set Zram
