@@ -59,7 +59,7 @@ sed -i 's/(git)/(git gitfast z sudo zsh-syntax-highlighting zsh-autosuggestions 
 ```zsh
 echo "alias cat='batcat -p --paging=never'" >> ~/.zshrc && source ~/.zshrc
 # Optional (try the theme I modified)
-mkdir -p "$(batcat --config-dir)/themes" && curl -o "$(batcat --config-dir)/themes"/Vim.tmTheme https://raw.githubusercontent.com/moesnow/Linux-Server-Config/main/Vim.tmTheme && bat cache --build && echo "alias cat='batcat -p --paging=never --theme Vim'" >> ~/.zshrc && source ~/.zshrc
+mkdir -p "$(batcat --config-dir)/themes" && curl -o "$(batcat --config-dir)/themes"/Vim.tmTheme https://raw.githubusercontent.com/moesnow/Linux-Server-Config/main/Vim.tmTheme && batcat cache --build && echo "alias cat='batcat -p --paging=never --theme Vim'" >> ~/.zshrc && source ~/.zshrc
 ```
 
 ## Change Locale and Localtime
